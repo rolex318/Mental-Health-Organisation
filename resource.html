@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Resource Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="hero-section">
+    <h1 class="hero-heading">Mental Health Resource Library</h1>
+    <p class="hero-subtext">Explore a range of resources to support your mental wellbeing.</p>
+</section>
+
+<section class="resource-library">
+    <div class="card card1">
+        <h2>Mindfulness Practices</h2>
+        <p>Learn how to be present and grounded in daily life to reduce stress and improve focus.</p>
+        <div class="more-content">
+            <p>Mindfulness techniques can include breathing exercises, meditation, and mindful walking. Practicing mindfulness regularly helps increase self-awareness and reduces anxiety.</p>
+        </div>
+        <button class="read-more" onclick="toggleMoreContent(this)">Read More &#9654;</button>
+    </div>
+    
+    <div class="card card2">
+        <h2>Managing Anxiety</h2>
+        <p>Practical tips and resources to help you navigate and manage anxiety effectively.</p>
+        <div class="more-content">
+            <p>Anxiety management includes strategies like deep breathing, cognitive reframing, and gradual exposure. Understanding and addressing anxiety can improve overall mental health.</p>
+        </div>
+        <button class="read-more" onclick="toggleMoreContent(this)">Read More &#9654;</button>
+    </div>
+    
+    <div class="card card3">
+        <h2>Building Resilience</h2>
+        <p>Discover strategies for building resilience and coping with life’s challenges.</p>
+        <div class="more-content">
+            <p>Resilience skills include setting realistic goals, cultivating a positive mindset, and maintaining social support. Strengthening resilience aids in handling stress and setbacks.</p>
+        </div>
+        <button class="read-more" onclick="toggleMoreContent(this)">Read More &#9654;</button>
+    </div>
+    
+    <div class="card card4">
+        <h2>Therapy and Counseling</h2>
+        <p>Explore therapy options and find the support that suits your needs.</p>
+        <div class="more-content">
+            <p>Therapy options like cognitive-behavioral therapy, group counseling, and online support provide tools for mental health improvement. Finding the right therapist can make a big difference.</p>
+        </div>
+        <button class="read-more" onclick="toggleMoreContent(this)">Read More &#9654;</button>
+    </div>
+</section>
+
+<script>
+function toggleMoreContent(button) {
+    const moreContent = button.previousElementSibling;
+    moreContent.classList.toggle("visible");
+
+    if (moreContent.classList.contains("visible")) {
+        button.innerHTML = "Read Less &#9664;";
+    } else {
+        button.innerHTML = "Read More &#9654;";
+    }
+}
+</script>
+
+</body>
+</html>
